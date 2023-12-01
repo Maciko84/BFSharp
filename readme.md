@@ -2,9 +2,9 @@
 BF+ is a brainfuck compiler with more characters to work.
 
 ## how to compile
-compile it using regular gcc (im using MinGW on windows)
+compile it using regular g++ (im using MinGW on windows)
 ```
-gcc main.cpp -o bfplus.exe
+g++ main.cpp -o bfplus.exe
 ```
 
 ## documentation
