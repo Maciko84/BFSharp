@@ -1,3 +1,4 @@
+> NOTE: If you want to run this app, you need to have gcc on your machine!
 # BF+
 BF+ is a brainfuck compiler with more characters to work.
 
