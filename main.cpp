@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
     ifstream input_file(argv[1]);
     if (!input_file) {
-        cout << "Could not open file " << argv[1] << "\n";/*tanczacejajcomaciezki*/
+        cout << "Could not open file " << argv[1] << "\n";
         return 1;
     }
 
