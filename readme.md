@@ -9,4 +9,4 @@ g++ main.cpp -o bfplus.exe
 ```
 
 ## documentation
-Sorry, i don`t made documentation now.
+Documentation is available now on wiki [here](https://github.com/Maciko84/BFPlus/wiki)
