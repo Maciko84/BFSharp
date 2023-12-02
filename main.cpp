@@ -53,8 +53,8 @@ int main(int argc, char* argv[]) {
         case '0':
             output_file<<"array[indexer] = 0;";
 
-        //TODO: add file saving and reading operators!
-        //TODO: add if statement
+        // TODO: add file saving and reading operators!
+        // TODO: add if statement
         default:
             break;
         }
