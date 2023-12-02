@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     if (argc != 3) {
-        cout << "Usage: " << argv[0] << " <brainfuck_file> <output_exe>\n";
+        cout << "Usage: " << argv[0] << " <brainfuck or brainfuck+ file> <output executable>\n";
         return 1;
     }
 
@@ -54,6 +54,7 @@ int main(int argc, char* argv[]) {
             output_file<<"array[indexer] = 0;";
 
         //TODO: add file saving and reading operators!
+        //TODO: add if statement
         default:
             break;
         }
