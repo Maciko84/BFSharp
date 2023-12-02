@@ -1,5 +1,5 @@
 > NOTE: If you want to run this app, you need to have gcc on your machine!
-# B#
+# BF#
 BF# is a brainfuck compiler with more characters to work.
 
 ## how to compile
@@ -12,8 +12,8 @@ g++ main.cpp -o BFSharp.exe
 predefined extensions are:
 * .b
 * .bf
-* .bfp
-* .bf+
+* .bf#
+* .bff
 
 
 ## documentation
