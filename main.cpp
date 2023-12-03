@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
 
     string brainfuck_code((istreambuf_iterator<char>(input_file)), istreambuf_iterator<char>());
     ofstream output_file("temp.c");
-    output_file << "#include <stdio.h>\n#include <conio.h>\n\nint main(void) {\nint array[30000] = {0};\nint indexer=0;\n";
+    output_file << "// | Generated using BF# - https:\\\\github.com\\Maciko84\\BFSharp |\n#include <stdio.h>\n#include <conio.h>\n\nint main(void) {\nint array[30000] = {0};\nint indexer=0;\nFILE *fptr;fptr = fopen(\"BrainSharpOutput.dat\", \"a+\");\n";
 
     for (char c : brainfuck_code) {
         switch (c)
@@ -52,14 +52,17 @@ int main(int argc, char* argv[]) {
             output_file<<"printf(\"%d\", array[indexer]);";
         case '0':
             output_file<<"array[indexer] = 0;";
-
-        // TODO: add file saving and reading operators and add if statement!
+        case '#':
+            output_file<<"fprintf(fptr, \"%c\", array[indexer])";
+        case '*':
+            output_file<<"while ((array[indexer] = fgetc(fptr)) != EOF);"
+        // TODO: add if statement!
         default:
             break;
         }
     }
 
-    output_file << "return 0;\n}";
+    output_file << "fclose(fptr);\nreturn 0;\n}";
     output_file.close();
     string gcccommand = "gcc temp.c -o " + string(argv[2]);
     //compile using gcc
