@@ -53,9 +53,9 @@ int main(int argc, char* argv[]) {
         case '0':
             output_file<<"array[indexer] = 0;";
         case '#':
-            output_file<<"fprintf(fptr, \"%c\", array[indexer])";
+            output_file<<"fprintf(fptr, \"%c\", array[indexer]);";
         case '*':
-            output_file<<"while ((array[indexer] = fgetc(fptr)) != EOF);"
+            output_file<<"while ((array[indexer] = fgetc(fptr)) != EOF);";
         // TODO: add if statement!
         default:
             break;
