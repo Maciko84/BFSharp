@@ -1,4 +1,6 @@
 > NOTE: If you want to run this app, you need to have gcc on your machine!
+
+## [join discord](https://discord.gg/J9T9UGNupv)
 # BF#
 BF# is a brainfuck compiler with more characters to work.
 
